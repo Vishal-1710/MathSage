@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="LEARN.jpg" />
+    <title>Learn Through Simulation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="LEARN.jpg" alt="Learn Through Simulation Logo" class="logo" />
+      <h1>Learn Through Simulation</h1>
+    </header>
+
+    <main>
+      <section id="home">
+        <h2><b>Welcome to Learn Through Simulation</b></h2>
+        <p>
+          We believe in <b>interactive learning</b> to solve complex
+          mathematical problems efficiently.
+        </p>
+        <p>
+          Our platform provides <b>simulations</b> that help students grasp
+          concepts effectively.
+        </p>
+        <button id="start-simulation" type="button">Start Simulation</button>
+      </section>
+
+      <section id="simulation-selection" class="hidden">
+        <h2><u>Select Your Topic & Difficulty</u></h2>
+        <div id="topic-selection">
+          <label for="topic"><b>Choose a Topic:</b></label>
+          <select id="topic">
+            <option value="">-- Select a Topic --</option>
+            <option value="calculus-derivatives">Calculus - Derivatives</option>
+            <option value="linear-algebra">Linear Algebra</option>
+            <option value="differential-equations">
+              Differential Equations
+            </option>
+            <option value="probability-basics">Probability - Basics</option>
+          </select>
+        </div>
+
+        <br />
+
+        <div id="difficulty-selection">
+          <label for="difficulty"><b>Select Difficulty Level:</b></label>
+          <select id="difficulty">
+            <option value="foundations">Foundations</option>
+            <option value="core-concepts">Core Concepts</option>
+            <option value="applied">Applied Differentiation</option>
+            <option value="advanced">Advanced Calculus</option>
+            <option value="pre-university">Pre-University Mastery</option>
+            <option value="engineering">Engineering Mathematics</option>
+          </select>
+        </div>
+
+        <br />
+
+        <div id="simulation-type-selection" class="hidden">
+          <h3>Choose Simulation Type:</h3>
+          <button data-type="concept">Concept Exploration</button>
+          <button data-type="problem">Problem Solving</button>
+          <button data-type="application">Graph Simulation</button>
+        </div>
+
+        <div id="simulation-area"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Learn Through Simulation</p>
+    </footer>
+
+    <button id="theme-toggle" aria-label="Toggle dark/light theme">🌙 Theme</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

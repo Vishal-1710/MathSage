@@ -1,0 +1,224 @@
+:root {
+  --bg: #111;
+  --text: #f2f2f2;
+  --module-bg: #181f2a;
+  --accent: #7ecfff;
+  --button-bg: #0078d7;
+  --button-hover: #005fa3;
+  --canvas-bg: #181818;
+  --border: #444;
+  --footer: #181818;
+  --feature-shadow: 0 2px 8px #0004;
+}
+
+/* Light theme variables */
+body.light-theme {
+  --bg: #fff;
+  --text: #222;
+  --module-bg: #f2f2f2;
+  --accent: #0078d7;
+  --button-bg: #0078d7;
+  --button-hover: #005fa3;
+  --canvas-bg: #f9f9f9;
+  --border: #bbb;
+  --footer: #f2f2f2;
+  --feature-shadow: 0 2px 8px #bbb4;
+}
+
+body, html {
+  background-color: var(--bg) !important;
+  color: var(--text);
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: var(--footer);
+  color: var(--text);
+  padding: 20px;
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+header .logo {
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
+  background: transparent;
+}
+
+main {
+  padding: 20px;
+  background: transparent;
+  color: var(--text);
+  flex: 1 0 auto;
+}
+
+section {
+  margin-bottom: 40px;
+  background: transparent;
+  color: var(--text);
+}
+
+select, input[type="text"], button {
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background-color: var(--module-bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+select:focus, input[type="text"]:focus, button:focus {
+  outline: 2px solid var(--accent);
+  background-color: var(--canvas-bg);
+  color: var(--text);
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--text);
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+#concept-module {
+  background-color: var(--module-bg);
+  border-radius: 5px;
+  color: var(--text);
+  padding: 16px;
+  margin: 16px 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+#concept-step-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+  color: var(--accent);
+}
+
+#concept-step-text {
+  margin: 10px 0;
+}
+
+footer {
+  background-color: var(--footer);
+  padding: 10px;
+  text-align: center;
+  color: #888;
+  flex-shrink: 0;
+}
+
+#graph-info {
+  color: var(--accent);
+  margin-top: 10px;
+  font-size: 1.1em;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+canvas {
+  border: 1px solid var(--border);
+  margin-top: 10px;
+  background: var(--canvas-bg);
+  box-shadow: 0 2px 16px #000a;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  transition: background 0.3s, border 0.3s;
+}
+
+#graph-controls input,
+#graph-controls button {
+  background: var(--module-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 0 4px 10px 0;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+#graph-controls input:focus {
+  outline: 2px solid var(--accent);
+  background: var(--canvas-bg);
+  color: var(--text);
+}
+
+#graph-controls button:hover {
+  background: var(--button-hover);
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  background: transparent;
+  color: var(--text);
+}
+
+.features-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.feature-card {
+  background: var(--module-bg);
+  color: var(--text);
+  border-radius: 10px;
+  box-shadow: var(--feature-shadow);
+  padding: 1em;
+  width: 220px;
+  text-align: center;
+  margin: 1em;
+  min-width: 180px;
+  max-width: 260px;
+  flex: 1 1 220px;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.feature-card img {
+  width: 48px;
+  margin-bottom: 0.5em;
+  background: transparent;
+}
+
+@media (max-width: 600px) {
+  main, section {
+    padding: 8px;
+  }
+  .feature-card {
+    min-width: 140px;
+    max-width: 100%;
+    font-size: 0.95em;
+  }
+}
+#theme-toggle {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
