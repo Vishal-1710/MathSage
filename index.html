@@ -15,16 +15,46 @@
     </header>
 
     <main>
+      <nav class="navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <style>
+        nav ul{
+          /* display: flex; */
+          margin: 0px;
+          padding: 0px;
+          /* padding: auto; */
+          /* gap: 300px; */
+          /* list-style: none; */
+          /* text-align: center; */
+        }
+        #home>div>h2{
+          text-align: center;
+          padding: 20px;
+        }
+      </style>
       <section id="home">
-        <h2><b>Welcome to Learn Through Simulation</b></h2>
-        <p>
-          We believe in <b>interactive learning</b> to solve complex
-          mathematical problems efficiently.
-        </p>
-        <p>
-          Our platform provides <b>simulations</b> that help students grasp
-          concepts effectively.
-        </p>
+        <div>
+          <h2><b>Welcome to Learn Through Simulation</b></h2>
+          <p>
+            There are vast numbers of resources and platforms available on the
+            internet that can help learners to learn mathematics efficiently.
+            But none of them are free of either cost or the necessity for user
+            to go through so much authentications like creating user id, login
+            etc. Also, there might be some platforms that may provide
+            interactive learning atmosphere but as mentioned above they are not
+            free. We believe in <b>free education with quality concept</b> for
+            everyone.
+          </p>
+          <p>
+            Our platform provides <b>simulations</b> that help students grasp
+            concepts effectively.
+          </p>
+        </div>
         <button id="start-simulation" type="button">Start Simulation</button>
       </section>
 
@@ -74,7 +104,9 @@
       <p>&copy; <span id="year"></span> Learn Through Simulation</p>
     </footer>
 
-    <button id="theme-toggle" aria-label="Toggle dark/light theme">🌙 Theme</button>
+    <button id="theme-toggle" aria-label="Toggle dark/light theme">
+      🌙 Theme
+    </button>
 
     <script src="script.js"></script>
   </body>
