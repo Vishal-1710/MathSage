@@ -1,0 +1,21 @@
+{
+  "name": "MathSage",
+  "short_name": "MathSage",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1976d2",
+  "description": "A math learning app.",
+  "icons": [
+    {
+      "src": "LEARN.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "LEARN.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
