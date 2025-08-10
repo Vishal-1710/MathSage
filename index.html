@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="LEARN.jpg" />
+    <link rel="icon" type="image/png" href="LEARN.png" />
+    <!-- Apple Touch Icon for iOS Home Screen -->
+    <link rel="apple-touch-icon" href="LEARN.png" />
+    <!-- PWA Manifest and Theme Color -->
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#1976d2" />
     <title>Learn Through Simulation</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
@@ -77,5 +82,13 @@
     <button id="theme-toggle" aria-label="Toggle dark/light theme">🌙 Theme</button>
 
     <script src="script.js"></script>
+      <!-- Register Service Worker for PWA -->
+      <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('service-worker.js');
+          });
+        }
+      </script>
   </body>
 </html>
