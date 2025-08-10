@@ -1,0 +1,827 @@
+{
+  "Calculus - Derivatives": {
+    "foundation": {
+      "definition": "A derivative measures how a function changes as its input changes; it represents the instantaneous rate of change of a function.",
+      "theorems": [
+        {
+          "name": "Rolle's Theorem",
+          "statement": "If a function f is continuous on [a, b], differentiable on (a, b), and f(a) = f(b), then there exists at least one c in (a, b) such that f'(c) = 0.",
+          "example": "For f(x) = x^2 - 4x + 4 on [2, 4], f(2) = f(4) = 0. By Rolle's Theorem, there is c in (2,4) with f'(c)=0. f'(x)=2x-4, so 2c-4=0 ⇒ c=2."
+        },
+        {
+          "name": "Mean Value Theorem",
+          "statement": "If f is continuous on [a, b] and differentiable on (a, b), then there exists c in (a, b) such that f'(c) = (f(b) - f(a)) / (b - a).",
+          "example": "For f(x) = x^2 on [1,3], f'(c) = (9-1)/(3-1) = 4. f'(x)=2x, so 2c=4 ⇒ c=2."
+        }
+      ],
+      "postulates": [
+        "The function must be continuous at the point of differentiation.",
+        "The function must be defined in an open interval around the point."
+      ],
+      "types": [
+        "Explicit differentiation",
+        "Implicit differentiation",
+        "Higher-order derivatives"
+      ],
+      "formulas": [
+        "Power Rule: d/dx[x^n] = n * x^(n-1)",
+        "Constant Rule: d/dx[c] = 0",
+        "Sum Rule: d/dx[f(x) + g(x)] = f'(x) + g'(x)"
+      ],
+      "example": "Let f(x) = x^2. Then f'(x) = 2x. At x = 3, the slope is 6.",
+      "applications": [
+        {
+          "name": "Physics: Velocity",
+          "explanation": "The derivative of position with respect to time gives velocity. If s(t) = t^2, then velocity v(t) = s'(t) = 2t."
+        },
+        {
+          "name": "Economics: Marginal Cost",
+          "explanation": "The derivative of the cost function C(x) gives the marginal cost, i.e., the cost of producing one more unit."
+        }
+      ]
+    },
+    "core concept": {
+      "definition": "Derivatives generalize slope to any curve. Learn rules for differentiating products, quotients, and composite (chain rule) functions.",
+      "theorems": [
+        {
+          "name": "Fermat's Theorem",
+          "statement": "If f has a local extremum at c and is differentiable at c, then f'(c) = 0.",
+          "example": "For f(x) = x^2, the minimum at x=0 has f'(0)=0."
+        }
+      ],
+      "postulates": [
+        "Differentiability implies continuity, but not vice versa."
+      ],
+      "types": [
+        "Product Rule",
+        "Quotient Rule",
+        "Chain Rule"
+      ],
+      "formulas": [
+        "Product Rule: (fg)' = f'g + fg'",
+        "Quotient Rule: (f/g)' = (f'g - fg') / g^2",
+        "Chain Rule: (f(g(x)))' = f'(g(x)) * g'(x)"
+      ],
+      "example": "If f(x) = x^3 * sin(x), then f'(x) = 3x^2 * sin(x) + x^3 * cos(x).",
+      "applications": [
+        {
+          "name": "Physics: Acceleration",
+          "explanation": "The second derivative of position gives acceleration."
+        },
+        {
+          "name": "Optimization",
+          "explanation": "Finding maxima and minima in economics or engineering."
+        }
+      ]
+    },
+    "applied": {
+      "definition": "Applying derivatives to solve real-world problems: rates of change, optimization, tangent lines.",
+      "theorems": [
+        {
+          "name": "Extreme Value Theorem",
+          "statement": "A continuous function on a closed interval attains its maximum and minimum.",
+          "example": "f(x) = -x^2 + 4x on [0,4] has max at x=2, min at x=0 or x=4."
+        }
+      ],
+      "postulates": [
+        "Critical points occur where f'(x) = 0 or f'(x) is undefined."
+      ],
+      "types": [
+        "Optimization problems",
+        "Related rates"
+      ],
+      "formulas": [
+        "Velocity: v(t) = s'(t)",
+        "Acceleration: a(t) = s''(t)"
+      ],
+      "example": "If s(t) = 16t - 5t^2 (height of a ball), then velocity v(t) = 16 - 10t.",
+      "applications": [
+        {
+          "name": "Motion problems",
+          "explanation": "Finding when an object reaches its highest point."
+        },
+        {
+          "name": "Profit maximization",
+          "explanation": "Maximizing profit by setting derivative of profit function to zero."
+        }
+      ]
+    },
+    "advanced": {
+      "definition": "Differentiation of implicit, parametric, and higher-order derivatives.",
+      "theorems": [
+        {
+          "name": "Implicit Function Theorem",
+          "statement": "If F(x, y) = 0 defines y implicitly as a function of x, and ∂F/∂y ≠ 0, then y can be locally written as a function of x.",
+          "example": "For x^2 + y^2 = 1, dy/dx = -x/y."
+        }
+      ],
+      "postulates": [
+        "Implicit differentiation is used when y cannot be explicitly solved for x."
+      ],
+      "types": [
+        "Implicit differentiation",
+        "Parametric differentiation",
+        "Higher-order derivatives"
+      ],
+      "formulas": [
+        "Implicit: For x^2 + y^2 = 1, dy/dx = -x/y",
+        "Higher-order derivative: f''(x), f'''(x)"
+      ],
+      "example": "For y^2 = x^3 + x, differentiating both sides with respect to x gives: 2y dy/dx = 3x^2 + 1, so dy/dx = (3x^2 + 1)/(2y).",
+      "applications": [
+        {
+          "name": "Curvature",
+          "explanation": "Second derivatives are used to find the curvature of a curve."
+        },
+        {
+          "name": "Physics",
+          "explanation": "Analyzing physical systems with implicit relationships."
+        }
+      ]
+    },
+    "pre-university": {
+      "definition": "Solving complex problems and modeling with derivatives, including advanced techniques.",
+      "theorems": [
+        {
+          "name": "L'Hospital's Rule",
+          "statement": "If lim_{x→a} f(x)/g(x) is indeterminate (0/0 or ∞/∞), then lim_{x→a} f(x)/g(x) = lim_{x→a} f'(x)/g'(x) if the latter limit exists.",
+          "example": "lim_{x→0} sin(x)/x = lim_{x→0} cos(x)/1 = 1."
+        }
+      ],
+      "postulates": [
+        "L'Hospital's Rule applies to indeterminate forms 0/0 or ∞/∞."
+      ],
+      "types": [
+        "Limits involving derivatives",
+        "Optimization with constraints"
+      ],
+      "formulas": [
+        "L'Hospital's Rule: lim_{x→a} [f(x)/g(x)] = lim_{x→a} [f'(x)/g'(x)] (if both → 0 or ∞)"
+      ],
+      "example": "Find dimensions with max area given perimeter using derivatives. Solve limits using L'Hospital's Rule.",
+      "applications": [
+        {
+          "name": "Economics",
+          "explanation": "Marginal analysis for cost and revenue."
+        },
+        {
+          "name": "Physics",
+          "explanation": "Projectile motion and advanced modeling."
+        }
+      ]
+    },
+    "engineering": {
+      "definition": "Partial derivatives and multivariable calculus for engineering analysis.",
+      "theorems": [
+        {
+          "name": "Clairaut's Theorem",
+          "statement": "If the mixed partial derivatives of f(x, y) are continuous, then the order of differentiation does not matter: f_xy = f_yx.",
+          "example": "For f(x, y) = x^2y + y^3, f_xy = f_yx = 2x."
+        }
+      ],
+      "postulates": [
+        "Partial derivatives measure change with respect to one variable, holding others constant."
+      ],
+      "types": [
+        "Partial derivatives",
+        "Gradient, divergence, curl"
+      ],
+      "formulas": [
+        "Partial derivative: ∂f/∂x",
+        "Gradient vector: ∇f = (∂f/∂x, ∂f/∂y, ...)"
+      ],
+      "example": "For f(x, y) = x^2y + y^3, ∂f/∂x = 2xy, ∂f/∂y = x^2 + 3y^2.",
+      "applications": [
+        {
+          "name": "Stress-strain analysis",
+          "explanation": "Partial derivatives are used to analyze how materials deform under force."
+        },
+        {
+          "name": "Fluid dynamics",
+          "explanation": "Gradients and divergence are used in modeling fluid flow."
+        }
+      ]
+    }
+  },
+  "Linear Algebra": {
+    "foundation": {
+      "definition": "Study of vectors, matrices, and how to manipulate them. Basis for solving systems of equations.",
+      "theorems": [
+        {
+          "name": "Existence and Uniqueness Theorem",
+          "statement": "A system of n linear equations in n variables has a unique solution if the determinant of the coefficient matrix is nonzero.",
+          "example": "For 2x+3y=5, 4x+6y=10, determinant is zero, so no unique solution."
+        }
+      ],
+      "postulates": [
+        "A system of n linear equations in n variables has a unique solution if the determinant is nonzero."
+      ],
+      "types": [
+        "Vectors",
+        "Matrices",
+        "Scalars"
+      ],
+      "formulas": [
+        "Vector addition: a + b",
+        "Matrix multiplication: AB"
+      ],
+      "example": "Add vectors [1,2] + [3,4] = [4,6].",
+      "applications": [
+        {
+          "name": "Computer graphics",
+          "explanation": "Vectors and matrices are used to move and rotate objects."
+        },
+        {
+          "name": "Basic transformations",
+          "explanation": "Scaling, rotating, and translating points in space."
+        }
+      ]
+    },
+    "core concept": {
+      "definition": "Solve linear systems, inverses, and determinants.",
+      "theorems": [
+        {
+          "name": "Cramer's Rule",
+          "statement": "The solution to a system of linear equations can be found using determinants.",
+          "example": "For 2x+3y=5, x=(determinant with column replaced by constants)/(main determinant)."
+        },
+        {
+          "name": "Invertible Matrix Theorem",
+          "statement": "A square matrix is invertible if and only if its determinant is nonzero.",
+          "example": "Matrix [[1,2],[3,4]] has det=-2, so it is invertible."
+        }
+      ],
+      "postulates": [
+        "A square matrix is invertible if and only if its determinant is nonzero."
+      ],
+      "types": [
+        "Square matrix",
+        "Inverse matrix",
+        "Determinant"
+      ],
+      "formulas": [
+        "Inverse: A^-1 such that AA^-1 = I",
+        "Determinant for 2x2: det(A) = ad - bc"
+      ],
+      "example": "Solve AX = B for X using X = A^-1B.",
+      "applications": [
+        {
+          "name": "Network analysis",
+          "explanation": "Solving current and voltage in circuits."
+        },
+        {
+          "name": "Inventory systems",
+          "explanation": "Optimizing stock using linear equations."
+        }
+      ]
+    },
+    "applied": {
+      "definition": "Models and problems using vector spaces and matrices.",
+      "theorems": [
+        {
+          "name": "Rank-Nullity Theorem",
+          "statement": "The dimension of the column space plus the null space equals the number of columns.",
+          "example": "If a 3x3 matrix has rank 2, nullity is 1."
+        }
+      ],
+      "postulates": [
+        "The dimension of the column space plus the null space equals the number of columns."
+      ],
+      "types": [
+        "Vector spaces",
+        "Linear transformations"
+      ],
+      "formulas": [
+        "Transformation: T(x) = Ax",
+        "Input-output (Leontief) model"
+      ],
+      "example": "Rotate vector [1,0] by 90° with rotation matrix R(90°).",
+      "applications": [
+        {
+          "name": "Economics",
+          "explanation": "Input-output models for industries."
+        },
+        {
+          "name": "Image transforms",
+          "explanation": "Rotating and scaling images using matrices."
+        }
+      ]
+    },
+    "advanced": {
+      "definition": "Concepts of eigenvalues, eigenvectors, vector spaces and dimension.",
+      "theorems": [
+        {
+          "name": "Spectral Theorem",
+          "statement": "Every symmetric matrix can be diagonalized by an orthogonal matrix.",
+          "example": "Matrix [[2,1],[1,2]] can be diagonalized."
+        },
+        {
+          "name": "Cayley-Hamilton Theorem",
+          "statement": "Every square matrix satisfies its own characteristic equation.",
+          "example": "If A^2 - 5A + 6I = 0, then A satisfies this equation."
+        }
+      ],
+      "postulates": [
+        "Every square matrix satisfies its own characteristic equation."
+      ],
+      "types": [
+        "Eigenvalues",
+        "Eigenvectors",
+        "Diagonalization"
+      ],
+      "formulas": [
+        "A v = λv (Eigenvector/eigenvalue)",
+        "Dimension of vector space: number of basis vectors"
+      ],
+      "example": "Eigenvalues of [[2,0],[0,3]] are 2 and 3.",
+      "applications": [
+        {
+          "name": "Stability analysis",
+          "explanation": "Eigenvalues determine stability of systems."
+        },
+        {
+          "name": "Quantum mechanics",
+          "explanation": "Operators in quantum mechanics are matrices."
+        }
+      ]
+    },
+    "pre-university": {
+      "definition": "Orthonormalization, Gram-Schmidt, subspaces.",
+      "theorems": [
+        {
+          "name": "Gram-Schmidt Orthonormalization Process",
+          "statement": "Any linearly independent set can be orthonormalized.",
+          "example": "Apply Gram-Schmidt to [(1,1,0), (1,0,1)] in R^3."
+        }
+      ],
+      "postulates": [
+        "Any linearly independent set can be orthonormalized."
+      ],
+      "types": [
+        "Orthonormal basis",
+        "Subspaces"
+      ],
+      "formulas": [
+        "Gram-Schmidt process to create orthonormal basis"
+      ],
+      "example": "Apply Gram-Schmidt to [(1,1,0), (1,0,1)] in R^3.",
+      "applications": [
+        {
+          "name": "Data compression",
+          "explanation": "Orthonormal bases are used in signal and image compression."
+        },
+        {
+          "name": "Signal analysis",
+          "explanation": "Fourier and wavelet transforms use orthonormal bases."
+        }
+      ]
+    },
+    "engineering": {
+      "definition": "Matrix decompositions for computations; applied techniques.",
+      "theorems": [
+        {
+          "name": "Singular Value Decomposition (SVD) Theorem",
+          "statement": "Any m x n matrix can be decomposed as UΣV^T.",
+          "example": "A = UΣV^T, where U and V are orthogonal matrices."
+        }
+      ],
+      "postulates": [
+        "Any m x n matrix can be decomposed as UΣV^T."
+      ],
+      "types": [
+        "LU decomposition",
+        "QR decomposition",
+        "SVD"
+      ],
+      "formulas": [
+        "LU, QR, SVD decompositions"
+      ],
+      "example": "SVD: A = UΣV^T, where U and V are orthogonal matrices.",
+      "applications": [
+        {
+          "name": "Robotics",
+          "explanation": "Kinematics and control use matrix decompositions."
+        },
+        {
+          "name": "Data science",
+          "explanation": "SVD is used in principal component analysis (PCA)."
+        }
+      ]
+    }
+  },
+  "Differential Equations": {
+    "foundation": {
+      "definition": "An equation involving derivatives of a function. Classified as ordinary (ODE) or partial (PDE).",
+      "theorems": [
+        {
+          "name": "Existence and Uniqueness Theorem for ODEs",
+          "statement": "A solution exists and is unique if the function is continuous and satisfies a Lipschitz condition.",
+          "example": "dy/dx = 3x, y(0)=1 has a unique solution."
+        }
+      ],
+      "postulates": [
+        "A solution exists and is unique if the function is continuous and satisfies a Lipschitz condition."
+      ],
+      "types": [
+        "First-order ODE",
+        "Separable ODE",
+        "Linear ODE"
+      ],
+      "formulas": [
+        "First-order ODE: dy/dx = f(x, y)"
+      ],
+      "example": "dy/dx = 3x, solution: y = (3/2)x^2 + C",
+      "applications": [
+        {
+          "name": "Population growth",
+          "explanation": "Modeling exponential growth with ODEs."
+        },
+        {
+          "name": "Cooling processes",
+          "explanation": "Newton's law of cooling uses first-order ODEs."
+        }
+      ]
+    },
+    "core concept": {
+      "definition": "Solution to key types: separable, linear, and constant coefficient equations.",
+      "theorems": [
+        {
+          "name": "Superposition Principle for linear ODEs",
+          "statement": "The general solution is the sum of the homogeneous and particular solutions.",
+          "example": "y'' + 4y = 0, general solution: y = A sin(2x) + B cos(2x)."
+        }
+      ],
+      "postulates": [
+        "The general solution is the sum of the homogeneous and particular solutions."
+      ],
+      "types": [
+        "Separable ODE",
+        "Linear ODE",
+        "Second-order ODE"
+      ],
+      "formulas": [
+        "Separable: dy/dx = g(x)h(y)",
+        "Second-order: y'' + a y' + b y = 0"
+      ],
+      "example": "y'' + 4y = 0, solution: y = A sin(2x) + B cos(2x)",
+      "applications": [
+        {
+          "name": "Vibrations",
+          "explanation": "Modeling oscillations in springs and circuits."
+        },
+        {
+          "name": "Electrical circuits",
+          "explanation": "RLC circuits are modeled with second-order ODEs."
+        }
+      ]
+    },
+    "applied": {
+      "definition": "Modeling real systems: growth, decay, mixing, chemical processes.",
+      "theorems": [
+        {
+          "name": "Exponential Growth and Decay Law",
+          "statement": "The rate of change is proportional to the current value.",
+          "example": "dP/dt = rP ⇒ P(t) = P0 e^{rt}"
+        }
+      ],
+      "postulates": [
+        "The rate of change is proportional to the current value."
+      ],
+      "types": [
+        "Exponential growth",
+        "Mixing problems"
+      ],
+      "formulas": [
+        "Exponential growth: dP/dt = rP ⇒ P(t) = P0 e^{rt}"
+      ],
+      "example": "Salt mixing: dS/dt + kS = input_rate (first order linear ODE)",
+      "applications": [
+        {
+          "name": "Chemical concentrations",
+          "explanation": "Mixing tanks and reaction rates."
+        },
+        {
+          "name": "Finance",
+          "explanation": "Compound interest modeled by ODEs."
+        }
+      ]
+    },
+    "advanced": {
+      "definition": "Nonhomogeneous equations, systems, and analytical methods.",
+      "theorems": [
+        {
+          "name": "Variation of Parameters",
+          "statement": "A method to solve nonhomogeneous linear ODEs using the general solution of the homogeneous equation.",
+          "example": "y'' + y = sin(x) solved by variation of parameters."
+        },
+        {
+          "name": "Laplace Transform Theorem",
+          "statement": "Transforms a differential equation into an algebraic equation in the Laplace domain.",
+          "example": "L{f'(t)} = sF(s) - f(0)."
+        }
+      ],
+      "postulates": [
+        "Laplace transforms convert differential equations into algebraic equations."
+      ],
+      "types": [
+        "Nonhomogeneous ODE",
+        "Systems of ODEs"
+      ],
+      "formulas": [
+        "Method of undetermined coefficients",
+        "Laplace transform: L{f(t)} = ∫ e^{-st}f(t) dt"
+      ],
+      "example": "System: dx/dt = -y, dy/dt = x; leads to circular motion.",
+      "applications": [
+        {
+          "name": "Electrical engineering",
+          "explanation": "Laplace transforms solve circuit equations."
+        },
+        {
+          "name": "Predator-prey models",
+          "explanation": "Systems of ODEs model populations."
+        }
+      ]
+    },
+    "pre-university": {
+      "definition": "Power and series solutions, more advanced modeling.",
+      "theorems": [
+        {
+          "name": "Frobenius Method",
+          "statement": "A technique to find power series solutions to differential equations near singular points.",
+          "example": "y'' + y = 0 solved by power series, yields sine and cosine."
+        }
+      ],
+      "postulates": [
+        "Series solutions are used when standard methods fail."
+      ],
+      "types": [
+        "Power series solution",
+        "Singular points"
+      ],
+      "formulas": [
+        "Series solution: y = Σ a_n x^n"
+      ],
+      "example": "y'' + y = 0 solved by power series, yields sine and cosine.",
+      "applications": [
+        {
+          "name": "Quantum mechanics",
+          "explanation": "Schrödinger equation solved by series."
+        },
+        {
+          "name": "Advanced economic models",
+          "explanation": "Complex systems modeled by series solutions."
+        }
+      ]
+    },
+    "engineering": {
+      "definition": "Advanced techniques including PDEs, Fourier and Laplace transforms.",
+      "theorems": [
+        {
+          "name": "Separation of Variables",
+          "statement": "A method to solve PDEs by expressing the solution as a product of functions, each in a single variable.",
+          "example": "Solving the heat equation ∂u/∂t = k ∂²u/∂x²."
+        },
+        {
+          "name": "Fourier Series Theorem",
+          "statement": "Any periodic function can be represented as a sum of sines and cosines.",
+          "example": "f(x) = x on [-π, π] can be written as a Fourier sine series."
+        }
+      ],
+      "postulates": [
+        "PDEs describe systems with more than one independent variable."
+      ],
+      "types": [
+        "Heat equation",
+        "Wave equation",
+        "Laplace equation"
+      ],
+      "formulas": [
+        "Heat eq: ∂u/∂t = k ∂²u/∂x²",
+        "Wave eq: ∂²u/∂t² = c² ∂²u/∂x²"
+      ],
+      "example": "Solve for temperature in a rod: u(x,t) via separation of variables.",
+      "applications": [
+        {
+          "name": "Heat transfer",
+          "explanation": "Modeling temperature in materials."
+        },
+        {
+          "name": "Signal transmission",
+          "explanation": "Wave equations model signals in cables."
+        }
+      ]
+    }
+  },
+  "Probability": {
+    "foundation": {
+      "definition": "Study of chance and random events; measures likelihood of events happening.",
+      "theorems": [
+        {
+          "name": "Addition Rule for mutually exclusive events",
+          "statement": "If A and B are mutually exclusive, P(A or B) = P(A) + P(B).",
+          "example": "Probability of rolling a 2 or 3 on a die: 1/6 + 1/6 = 1/3."
+        }
+      ],
+      "postulates": [
+        "The probability of an event is between 0 and 1."
+      ],
+      "types": [
+        "Simple probability",
+        "Compound probability"
+      ],
+      "formulas": [
+        "P(A) = (# favorable outcomes) / (total # outcomes)"
+      ],
+      "example": "Probability of rolling a 4 on a die: 1/6.",
+      "applications": [
+        {
+          "name": "Game outcomes",
+          "explanation": "Calculating the chance of winning a game."
+        },
+        {
+          "name": "Simple predictions",
+          "explanation": "Weather, coin tosses, dice rolls."
+        }
+      ]
+    },
+    "core concept": {
+      "definition": "Concepts of conditional probability, independence, more complex events.",
+      "theorems": [
+        {
+          "name": "Multiplication Rule for independent events",
+          "statement": "If A and B are independent, P(A and B) = P(A) * P(B).",
+          "example": "Probability of two heads in two coin tosses: 1/2 * 1/2 = 1/4."
+        },
+        {
+          "name": "Bayes' Theorem",
+          "statement": "P(A|B) = [P(B|A)P(A)] / P(B)",
+          "example": "If P(A)=0.3, P(B|A)=0.5, P(B)=0.6, then P(A|B)=0.25."
+        }
+      ],
+      "postulates": [
+        "Events are independent if the occurrence of one does not affect the probability of the other."
+      ],
+      "types": [
+        "Conditional probability",
+        "Independent events"
+      ],
+      "formulas": [
+        "Conditional: P(A|B) = P(A and B) / P(B)",
+        "Bayes’ theorem: P(A|B) = [P(B|A)P(A)] / P(B)"
+      ],
+      "example": "If P(A) = 0.5, P(B) = 0.2, P(A and B) = 0.1, then P(A|B) = 0.1 / 0.2 = 0.5.",
+      "applications": [
+        {
+          "name": "Medical testing",
+          "explanation": "Bayes' theorem is used to update probabilities based on test results."
+        },
+        {
+          "name": "Machine learning",
+          "explanation": "Probabilities are used in classification algorithms."
+        }
+      ]
+    },
+    "applied": {
+      "definition": "Use of combinatorics and distributions for solving practical problems.",
+      "theorems": [
+        {
+          "name": "Binomial Theorem",
+          "statement": "Describes the algebraic expansion of powers of a binomial.",
+          "example": "(a+b)^n = Σ [nCk * a^(n-k) * b^k]"
+        }
+      ],
+      "postulates": [
+        "The sum of probabilities for all possible outcomes is 1."
+      ],
+      "types": [
+        "Combinatorics",
+        "Probability distributions"
+      ],
+      "formulas": [
+        "Combinations: nCk = n! / (k! (n-k)!)"
+      ],
+      "example": "Probability of drawing 2 aces from a deck of 52: C(4,2)/C(52,2)",
+      "applications": [
+        {
+          "name": "Risk analysis",
+          "explanation": "Calculating the probability of failure in engineering."
+        },
+        {
+          "name": "Genetics",
+          "explanation": "Predicting inheritance using binomial probabilities."
+        }
+      ]
+    },
+    "advanced": {
+      "definition": "Random variables, expectation, distribution types and calculations.",
+      "theorems": [
+        {
+          "name": "Law of Large Numbers",
+          "statement": "As the number of trials increases, the sample mean approaches the expected value.",
+          "example": "Flipping a fair coin many times, the proportion of heads approaches 0.5."
+        },
+        {
+          "name": "Central Limit Theorem",
+          "statement": "The sum of a large number of independent random variables is approximately normally distributed.",
+          "example": "Sum of dice rolls approaches a normal distribution as number of dice increases."
+        }
+      ],
+      "postulates": [
+        "The expected value is the long-run average value of repetitions of the experiment."
+      ],
+      "types": [
+        "Discrete random variables",
+        "Continuous random variables"
+      ],
+      "formulas": [
+        "Expected value: E[X] = Σ x_i * P(x_i)",
+        "Var(X) = E[X^2] - (E[X])^2"
+      ],
+      "example": "If X is binomial (n=10, p=0.2), E[X] = np = 2, Var(X) = np(1-p) = 1.6.",
+      "applications": [
+        {
+          "name": "Data science",
+          "explanation": "Random variables model data distributions."
+        },
+        {
+          "name": "Actuarial science",
+          "explanation": "Expected value is used in insurance calculations."
+        }
+      ]
+    },
+    "pre-university": {
+      "definition": "Limit theorems, hypothesis testing, sampling distributions.",
+      "theorems": [
+        {
+          "name": "Central Limit Theorem",
+          "statement": "Sample means are approximately normally distributed for large samples.",
+          "example": "Averages of dice rolls approach a normal distribution."
+        },
+        {
+          "name": "Chebyshev's Inequality",
+          "statement": "For any distribution, at least 1 - 1/k^2 of values are within k standard deviations of the mean.",
+          "example": "At least 75% of values are within 2 standard deviations."
+        }
+      ],
+      "postulates": [
+        "Sample means are approximately normally distributed for large samples."
+      ],
+      "types": [
+        "Sampling distributions",
+        "Hypothesis testing"
+      ],
+      "formulas": [
+        "Central Limit Theorem: Sample averages are ~N(μ, σ²/n) for large n."
+      ],
+      "example": "Approximating binomial with normal if n is large and p near 0.5.",
+      "applications": [
+        {
+          "name": "Polling",
+          "explanation": "Estimating population parameters from samples."
+        },
+        {
+          "name": "Error estimation",
+          "explanation": "Confidence intervals in manufacturing."
+        }
+      ]
+    },
+    "engineering": {
+      "definition": "Stochastic process, Markov chains, system reliability.",
+      "theorems": [
+        {
+          "name": "Markov Property",
+          "statement": "A Markov process has no memory; the next state depends only on the current state.",
+          "example": "Weather prediction using Markov chains."
+        },
+        {
+          "name": "Reliability Theorem",
+          "statement": "Reliability of parallel systems: 1 - Π (1 - R_i)",
+          "example": "System of 2 independent components with R1=0.9, R2=0.8 in parallel: 1 - (1-0.9)*(1-0.8) = 0.98"
+        }
+      ],
+      "postulates": [
+        "A Markov process has no memory; the next state depends only on the current state."
+      ],
+      "types": [
+        "Markov chains",
+        "Reliability engineering"
+      ],
+      "formulas": [
+        "Transition probability matrix for Markov chains.",
+        "Reliability of parallel: 1 - Π (1 - R_i)"
+      ],
+      "example": "System of 2 independent components with R1=0.9, R2=0.8 in parallel: 1 - (1-0.9)*(1-0.8) = 0.98",
+      "applications": [
+        {
+          "name": "Telecommunications",
+          "explanation": "Markov chains model data packet transmission."
+        },
+        {
+          "name": "Signal processing",
+          "explanation": "Random processes model noise in signals."
+        }
+      ]
+    }
+  }
+}

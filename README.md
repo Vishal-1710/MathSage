@@ -1,0 +1,1 @@
+Although there are so many learning platforms with a variety of resources but there aren't many that provide concept learning, problem solving, help with doubts and real simulation learning altogether and for free. This website is totally free and student can access the content without the need to register by creating an account and such things. Just come and learn all you want.
